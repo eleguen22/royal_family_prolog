@@ -1,0 +1,19 @@
+1. Who are Elizabeth's grandchildren?
+
+?- setof(X,grandchild(elizabeth,X),List).
+List = [beatrice, eugenie, harry, james, louise, peter, william, zara].
+
+2. Who are Diana's brothers-in-law?
+
+?- setof(X,brotherinlaw(diana,X),List).
+List = [andrew, edward].
+
+3. Who are Zara's cousins?
+
+?- setof(X,firstcousin(zara,X),List).
+List = [beatrice, eugenie, harry, james, louise, william].
+
+4. Who are Eugenie's ancestors?
+
+?- setof(X,ancestor(eugenie,X),List).
+List = [andrew, elizabeth, george, mum, philip, sarah].
